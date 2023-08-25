@@ -18,7 +18,7 @@ searchFormElement.addEventListener('submit', function (event) {
 
 function fetchMoviesByKeyword(userKeyword) {
   const apiKey = 'f53fc1fa'
-  const searchAPIUrl = `http://www.omdbapi.com/?s=${encodeURIComponent(userKeyword)}&apikey=${apiKey}`
+  const searchAPIUrl = `https://www.omdbapi.com/?s=${encodeURIComponent(userKeyword)}&apikey=${apiKey}`
 
   fetch(searchAPIUrl)
     .then(response => response.json())
@@ -45,7 +45,7 @@ function fetchMoviesByKeyword(userKeyword) {
 function fetchMoviesByIds(movieIds) {
   const apiKey = 'f53fc1fa' 
   const movieFetchPromises = movieIds.map(movieId => {
-    const movieUrl = `http://www.omdbapi.com/?i=${movieId}&apikey=${apiKey}`
+    const movieUrl = `https://www.omdbapi.com/?i=${movieId}&apikey=${apiKey}`
     return fetch(movieUrl)
       .then(response => response.json())
   })
