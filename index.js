@@ -35,7 +35,7 @@ function fetchMoviesByKeyword(userKeyword) {
     })
     .catch(error => {
       console.error('Error:', error)
-      resultElement.innerHTML = 'An error occurred while fetching the data.'
+      resultElement.innerHTML = <h3 class="no-result-error-message">API authentication error</h3>
     })
 }
 
