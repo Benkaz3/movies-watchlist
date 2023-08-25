@@ -353,6 +353,12 @@ span.watchlist-text:hover{
     text-decoration: none;
 }
 
+.remove-watchlist{
+    display: flex;
+    gap: 30px; 
+    align-items: center;
+}
+
 @media only screen and (max-width: 480px){
     .navbar-top{
         align-items: baseline;

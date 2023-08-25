@@ -31,8 +31,8 @@ function renderWatchlist() {
             <div class="remove">
                 <a class="remove-watchlist">
                     <i class="fa fa-minus-circle remove-watchlist-btn"></i>
+                    <p class="remove-watchlist-text">Remove</p>
                 </a>
-                <p class="remove-watchlist-text">Remove</p>
             </div>
         </div>
         <div class="movie-description">
